@@ -9,6 +9,7 @@ public class FizzBuzzer {
 
 	public String next() {
 		if (round == MAGIC_KEY) {
+			round++;
 			return MAGIC_VALUE;
 		}
 		return String.format("%d", round++);
