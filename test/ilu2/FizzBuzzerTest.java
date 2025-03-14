@@ -25,4 +25,16 @@ class FizzBuzzerTest {
 		assertEquals("2", game.next());
 	}
 
+	@Test
+	void testPremierFizz() {
+		preshot(2);
+		assertEquals("fizz", game.next());
+	}
+
+	private void preshot(int nbRounds) {
+		for (int i = 0; i < nbRounds; i++) {
+			game.next();
+		}
+	}
+
 }
