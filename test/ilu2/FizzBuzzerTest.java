@@ -17,7 +17,12 @@ class FizzBuzzerTest {
 	@Test
 	void testDebutPartie() {
 		assertEquals("1", game.next());
+	}
 
+	@Test
+	void testDeuxiemeRound() {
+		game.next();
+		assertEquals("2", game.next());
 	}
 
 }
